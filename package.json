@@ -5,9 +5,14 @@
   "name": "video-framework",
   "version": "1.0.0",
   "description": "videocomponent framework",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
